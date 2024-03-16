@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 100px);
+    }
+    .container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+</style>
+<body>
+    <div class="container">
+        <div><img src="item_1.jpeg"/></div>
+        <div><img src="item_2.jpeg"/></div>
+        <div><img src="item_3.jpeg"/></div>
+        <div><img src="item_4.jpeg"/></div>
+        <div><img src="item_5.jpeg"/></div>
+        <div><img src="item_6.jpeg"/></div>
+    </div>
+</body>
+</html>
